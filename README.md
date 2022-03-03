@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# Introduction
+Boiler Plate for building web application using Glass Tech Stack
+1. React
+2. TypeScript
+3. Tachyons (CSS)
+4. React-Query 
+5. Jest (Unit and Integration Testing Library)
+6. TestCafe (Functional Testing Library)
+7. GraphQL (Apollo-express server)
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Start app server
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
+Run `yarn start` to run the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
+## Start graphql server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Run `yarn server` to execute bring up apollo-express graphql server in watch mode. <br />
+Open [http://localhost:3600/graphql](http://localhost:3600/graphql) to view graphql playground or to connect to server.
 
-### `yarn build`
+### Running unit tests
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run `yarn test` to execute the unit tests via [Jest](https://jestjs.io).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Running end-to-end tests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Run `yarn e2e ` to execute the end-to-end tests via [Test Cafe ](https://devexpress.github.io/testcafe/).
 
-### `yarn eject`
+## Exercise 1
+   #### The goal of this exercise is to build a “Nutrition Table” user interface using above tech stack. <br/>
+    #### Key UI Elements
+    * UI Table with selection -Done
+    * Delete Nutrition -Done
+    * Sort - Done
+    * No need of Pagination
+   
+    #### Remarque (note)
+    1. Typescript with React  
+    2. Tachyons for CSS
+    3. Use Graphql mock server and react-query to fetch data for your react components state
+    4. Write Unit and Integration Tests using Jest & RTL
+    5. Write Functional Tests using TestCafe & TTL
+    
+![image](./src/assets/nutrition.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Exercise 2
+   #### The goal of this exercise is to build a “Purchase Order Summary” user interface using above tech stack. <br/>
+    #### Key UI Elements
+    * Sub Total
+    * Delivery or PickUp Fees
+    * Tax
+    * Estimated Total
+   
+    #### Remarque (note)
+    1. Typescript with React  
+    2. Tachyons for CSS
+    3. Use Graphql mock server and react-query to fetch data for your react components state
+    4. Write Unit and Integration Tests using Jest & RTL
+    5. Write Functional Tests using TestCafe & TTL
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image](./src/assets/pos.png)
+# react-query-testcafe-graphql-trachyons-seconds-steps
