@@ -1,5 +1,5 @@
 # Introduction
-Boiler Plate for building web application using Glass Tech Stack
+Boiler Plate for building web application
 1. React
 2. TypeScript
 3. Tachyons (CSS)
